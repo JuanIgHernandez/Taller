@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0px;
+}
+@media(max-width:769px){
+    .body{
+        width: 800px;
+    }
+    .header{
+        width: 800px;
+        height: 200px;
+    }
+    .header__menu{
+        padding: 0px;
+
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 150px;
+    }
+    .informacion{
+        width: 800px;
+        height: 9900px;
+        display: flex;
+        flex-direction: column;
+    }
+    .informacion__video{
+        width: 425px;
+        padding-left: 100px;
+    }
+    .informacion h3{
+        width: 400px;
+        height: 100px;
+        padding-left: 150px;
+    }
+    .Equipo{
+        width:800px;
+    }
+    .Pie{
+        width:800px
+    }
+    .Servicio{
+        width: 800px;
+    }
+    .Servicio__Imagen1{
+        margin-left: 100px;
+    }
+    .Servicio__Imagen2{
+        margin-left: 100px;
+    }
+    .descripcion{
+        width: 800px;
+    }
+    .Tabla{
+        width: 770px;
+    }
+    .Tabla__lista{
+        margin-left: 200px;
+    }
+    .descripcion__texto{
+        margin-left: 200px;
+    }
+    .galeria{
+        width: 800px;
+    }
+    .Contacto{
+        width: 780px;
+    }
+}       
+    
+.body{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    background-color:black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-left: 150px;
+}
+.header ul li{
+    font-size: 22px;
+    text-transform: uppercase; 
+    color: white;
+    display: inline;
+    padding: 10px;
+}
+.header ul li a{
+    color: white;
+    text-decoration: none;
+}
+.informacion{
+    background-image: url(./img/fondoweb.jpg);
+    height: 900px;
+    padding-bottom: 100px;
+}
+.informacion__video{
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 50px;
+    padding-right: 100px;
+}
+.informacion__texto{
+    color: white;
+    font-size: 17px;
+    width: 600px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.Equipo{
+    display: grid;
+    background-color: #000;
+    color: white;
+    grid-template-columns: 150px 1fr;
+    grid-template-rows: 1fr;
+    height: 90px;
+}
+.Equipo__Titulo{
+    text-transform: uppercase;
+    width: 100px;
+    padding: 20px;
+    font-size: 17px;
+}
+.Equipo__lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 120px;
+}
+.Equipo__lista li{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    font-size: 17px;
+}
+.Servicio{
+    height: 1200px;
+    display: grid;
+    background-color:rgb(255, 6, 6);
+    grid-template-areas: 
+    "Titulo Titulo Titulo"
+    "Imagen1 Imagen1 Imagen1"
+    "Subtitulo1 Subtitulo1 Subtitulo1"
+    "texto1 texto1 texto1"
+    "Imagen2 Imagen2 Imagen2"
+    "Subtitulo2 Subtitulo2 Subtitulo2"
+    "texto2 texto2 texto2";
+    
+}
+.Servicio__Imagen1{
+    grid-area: Imagen1;
+    height: 300px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.Servicio__Titulo{
+    grid-area: Titulo;
+    padding: 20px;
+    text-transform: uppercase;
+    align-items: center;
+}
+.Servicio__Subtitulo1{
+    font-size: 30px;
+    grid-area: Subtitulo1;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.Servicio__texto1{
+    grid-area: texto1;
+    padding-top: 20px;
+    padding-left: 50px;
+    width: 600px;
+}
+.Servicio__Imagen2{
+    grid-area: Imagen2;
+    height: 300px;
+    padding: 50px 50px 20px 50px;
+}
+.Servicio__Subtitulo2{   
+    font-size: 30px;
+    grid-area: Subtitulo2;
+    padding-top: 10px;
+    padding-left: 50px;
+
+}
+.Servicio__texto2{
+    grid-area: texto2;
+    padding-top: 20px;
+    padding-left: 50px;
+    width: 600px;
+}
+.descripcion{
+    background-color: red;
+}
+.descripcion__titulo{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.descripcion__texto{
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    width: 400px;
+}
+.Tabla{
+    background-color: red;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.Tabla__titulo{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+.Tabla__lista{
+    border-style: solid;
+    border-color: black;
+}
+.Contacto{
+    height: 400px;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: red;
+}
+.Contacto__titulo{
+    padding-bottom: 20px;
+    padding-left: 0px;
+    font-size: 40px;
+    color: white;   
+}
+.galeria{
+    background-color: red;
+    height: 1000px;    
+}
+.galeria__img1{
+    width: 326px;
+    padding: 40px;
+}
+.galeria__img2{
+    width: 350px;
+    padding: 40px;
+}
+.galeria__img3{
+    width: 350px;
+    padding: 40px;
+}
+.Pie{
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+.Pie h3{
+    padding: 10px 
+}
