@@ -5,20 +5,19 @@
 }
 @media(max-width:769px){
     .body{
+        width: 1200px;
+    }
+    .Frase{
         width: 800px;
     }
-    .header{
+    nav{
         width: 800px;
-        height: 200px;
+    } 
+    footer{
+        width: 800px;
     }
-    .header__menu{
-        padding: 0px;
-
-    }
-    .header ul{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 150px;
+    .nav{
+        width: 1000px;
     }
     .informacion{
         width: 800px;
@@ -41,32 +40,32 @@
     .Pie{
         width:800px
     }
-    .Servicio{
+    .Servicios{
         width: 800px;
     }
-    .Servicio__Imagen1{
-        margin-left: 100px;
+    .pricing-header{
+        width: 800px;
+        margin: 0px;
     }
-    .Servicio__Imagen2{
-        margin-left: 100px;
+    .Tabla{
+      width: 800px;
+    }
+    .fs-5{
+        margin-left: 20px;
+        margin-right: 20px;
     }
     .descripcion{
         width: 800px;
     }
-    .Tabla{
-        width: 770px;
-    }
-    .Tabla__lista{
-        margin-left: 200px;
-    }
+    
     .descripcion__texto{
         margin-left: 200px;
     }
-    .galeria{
+    .Contacto{
         width: 800px;
     }
-    .Contacto{
-        width: 780px;
+    .galeria{
+        width: 800px;
     }
 }       
     
@@ -101,61 +100,27 @@
     background-color: black;
     color: whitesmoke;
 }
-.Servicio{
-    height: 1200px;
-    display: grid;
-    background-color:rgb(255, 6, 6);
-    grid-template-areas: 
-    "Titulo Titulo Titulo"
-    "Imagen1 Imagen1 Imagen1"
-    "Subtitulo1 Subtitulo1 Subtitulo1"
-    "texto1 texto1 texto1"
-    "Imagen2 Imagen2 Imagen2"
-    "Subtitulo2 Subtitulo2 Subtitulo2"
-    "texto2 texto2 texto2";
-    
+.pricing-header{
+    background-color: red;
 }
-.Servicio__Imagen1{
-    grid-area: Imagen1;
+.fs-5{
+    color: white;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.Servicios{
+    background-color: red;
+}
+.rounded{
+    width: 400px;
     height: 300px;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding: 10px;
 }
-.Servicio__Titulo{
-    grid-area: Titulo;
-    padding: 20px;
-    text-transform: uppercase;
-    align-items: center;
+.featurette-heading{
+    padding-left: 10px;
 }
-.Servicio__Subtitulo1{
-    font-size: 30px;
-    grid-area: Subtitulo1;
-    padding-top: 20px;
-    padding-left: 50px;
-}
-.Servicio__texto1{
-    grid-area: texto1;
-    padding-top: 20px;
-    padding-left: 50px;
-    width: 600px;
-}
-.Servicio__Imagen2{
-    grid-area: Imagen2;
-    height: 300px;
-    padding: 50px 50px 20px 50px;
-}
-.Servicio__Subtitulo2{   
-    font-size: 30px;
-    grid-area: Subtitulo2;
-    padding-top: 10px;
-    padding-left: 50px;
-
-}
-.Servicio__texto2{
-    grid-area: texto2;
-    padding-top: 20px;
-    padding-left: 50px;
-    width: 600px;
+.lead{
+    padding-left: 10px;
 }
 .descripcion{
     background-color: red;
@@ -170,20 +135,7 @@
     padding-bottom: 20px;
     width: 400px;
 }
-.Tabla{
-    background-color: red;
-    padding-left: 30px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-}
-.Tabla__titulo{
-    padding-bottom: 20px;
-    font-size: 30px;
-}
-.Tabla__lista{
-    border-style: solid;
-    border-color: black;
-}
+
 .Contacto{
     background-color: red;
     width: 1500px;
@@ -198,7 +150,7 @@
     padding-top: 30px;
 }
 .mb-3{
-    width: 500px;
+    width: 400px;
     height: 100px;
     padding-left: 30px;
     padding-top: 20px;
