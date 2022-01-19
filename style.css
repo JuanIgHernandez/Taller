@@ -1,173 +1,195 @@
-*{
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: 0px;
+          box-sizing: 0px;
+}
+
+@media (max-width: 769px) {
+  .body {
+    width: 1200px;
+  }
+  .Frase {
+    width: 800px;
+  }
+  nav {
+    width: 800px;
+  }
+  footer {
+    width: 800px;
+  }
+  .nav {
+    width: 1000px;
+  }
+  .informacion {
+    width: 800px;
+    height: 9900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Servicios {
+    width: 800px;
+  }
+  .pricing-header {
+    width: 800px;
     margin: 0px;
-    padding: 0px;
-    box-sizing: 0px;
-}
-@media(max-width:769px){
-    .body{
-        width: 1200px;
-    }
-    .Frase{
-        width: 800px;
-    }
-    nav{
-        width: 800px;
-    } 
-    footer{
-        width: 800px;
-    }
-    .nav{
-        width: 1000px;
-    }
-    .informacion{
-        width: 800px;
-        height: 9900px;
-        display: flex;
-        flex-direction: column;
-    }
-    .informacion__video{
-        width: 425px;
-        padding-left: 100px;
-    }
-    .informacion h3{
-        width: 400px;
-        height: 100px;
-        padding-left: 150px;
-    }
-    .Equipo{
-        width:800px;
-    }
-    .Pie{
-        width:800px
-    }
-    .Servicios{
-        width: 800px;
-    }
-    .pricing-header{
-        width: 800px;
-        margin: 0px;
-    }
-    .Tabla{
-      width: 800px;
-    }
-    .fs-5{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .descripcion{
-        width: 800px;
-    }
-    
-    .descripcion__texto{
-        margin-left: 200px;
-    }
-    .Contacto{
-        width: 800px;
-    }
-    .galeria{
-        width: 800px;
-    }
-}       
-    
-.body{
-    display: grid;
-    width: 100%;
-    height: 100%;
+  }
+  .Tabla {
+    width: 800px;
+  }
+  .fs-5 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .Contacto {
+    width: 800px;
+  }
+  .galeria {
+    width: 800px;
+  }
 }
 
-.informacion{
-    background-image: url(./img/fondoweb.jpg);
-    height: 500px;
-    padding-bottom: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;   
-}
-.display-1{
-    color: white;
-    padding-top: 80px;
-}
-.h3{
-    color: whitesmoke;
-    padding-top: 50px;
-}
-.Frase{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    background-color: black;
-    color: whitesmoke;
-}
-.pricing-header{
-    background-color: red;
-}
-.fs-5{
-    color: white;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-.Servicios{
-    background-color: red;
-}
-.rounded{
-    width: 400px;
-    height: 300px;
-    padding: 10px;
-}
-.featurette-heading{
-    padding-left: 10px;
-}
-.lead{
-    padding-left: 10px;
-}
-.descripcion{
-    background-color: red;
-}
-.descripcion__titulo{
-    padding-left: 30px;
-    padding-top: 30px;
-}
-.descripcion__texto{
-    margin-top: 20px;
-    padding-left: 40px;
-    padding-bottom: 20px;
-    width: 400px;
+.body {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
 }
 
-.Contacto{
-    background-color: red;
-    width: 1500px;
-    height: 800px;
+.informacion {
+  background-image: url(./img/fondoweb.jpg);
+  height: 500px;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.h1{
-    padding-left: 30px;
-    padding-top: 30px;
+
+.informacion .display-1 {
+  color: white;
+  padding-top: 80px;
 }
-.h5{
-    padding-left: 30px;
-    padding-top: 30px;
+
+.informacion .h3 {
+  color: whitesmoke;
+  padding-top: 50px;
 }
-.mb-3{
-    width: 400px;
-    height: 100px;
-    padding-left: 30px;
-    padding-top: 20px;
+
+.informacion .Frase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  background-color: black;
+  color: whitesmoke;
 }
-.galeria{
-    background-color: red;
-    height: 1000px;    
+
+.Frase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  background-color: black;
+  color: whitesmoke;
 }
-.galeria__img1{
-    width: 326px;
-    padding: 40px;
+
+.pricing-header {
+  background-color: red;
 }
-.galeria__img2{
-    width: 350px;
-    padding: 40px;
+
+.pricing-header .fs-5 {
+  color: white;
+  margin-left: 300px;
+  margin-right: 300px;
 }
-.galeria__img3{
-    width: 350px;
-    padding: 40px;
+
+.Servicios {
+  background-color: red;
 }
+
+.rounded {
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+
+div .featurette-heading {
+  padding-left: 10px;
+}
+
+div .lead {
+  padding-left: 10px;
+}
+
+.Contacto {
+  background-color: red;
+  width: 1500px;
+  height: 800px;
+}
+
+.Contacto .h1 {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.Contacto .h5 {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.Contacto .mb-3 {
+  width: 400px;
+  height: 100px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.galeria {
+  background-color: red;
+  height: 1000px;
+}
+
+.galeria .galeria__img1 {
+  width: 326px;
+  padding: 40px;
+}
+
+.galeria .galeria__img2 {
+  width: 350px;
+  padding: 40px;
+}
+
+.galeria .galeria__img3 {
+  width: 350px;
+  padding: 40px;
+}
+/*# sourceMappingURL=style.css.map */
