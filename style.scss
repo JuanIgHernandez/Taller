@@ -1,5 +1,9 @@
 
-$FondoGral:red;
+
+$Colores:(
+    fondo: red,
+    letra: black,
+  );
 
 *{
     margin: 0px;
@@ -91,7 +95,7 @@ $FondoGral:red;
     color: whitesmoke;
 }
 .pricing-header{
-    background-color:$FondoGral;
+    background-color:map-get($Colores,fondo);
     .fs-5{
         color: white;
         margin-left: 300px;
@@ -100,12 +104,15 @@ $FondoGral:red;
 }
 
 .Servicios{
-    background-color:$FondoGral;
+    background-color:map-get($Colores,fondo);
 }
-.rounded{
+@mixin img{
     width: 400px;
     height: 300px;
-    padding: 10px;
+    padding: 10px;    
+}
+.rounded{
+    @include img;
 }
 div { 
     .featurette-heading{
@@ -119,7 +126,7 @@ div {
 }
 
 .Contacto{
-    background-color: $FondoGral;
+    background-color:map-get($Colores,fondo);
     width: 1500px;
     height: 800px;
     .h1{
@@ -127,34 +134,28 @@ div {
         padding-top: 30px;
     }
     .h5{
-        padding-left: 30px;
-        padding-top: 30px;
-      
+        @extend .h1;      
     }
     .mb-3{
         width: 400px;
         height: 100px;
-        padding-left: 30px;
-        padding-top: 20px;
+        @extend .h1; 
     }
 }
 
 
 
 .galeria{
-    background-color: $FondoGral;
-    height: 1000px; 
+    background-color:map-get($Colores,fondo);
+    height: 1000px;
     .galeria__img1{
         width: 326px;
         padding: 40px;
     }
     .galeria__img2{
-        width: 350px;
-        padding: 40px;
+       @extend .galeria__img1;
     }
     .galeria__img3{
-        width: 350px;
-        padding: 40px;
+        @extend .galeria__img1
     }   
 }
-
