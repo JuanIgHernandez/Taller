@@ -1,29 +1,36 @@
 * {
-  margin: 0px;
   padding: 0px;
   -webkit-box-sizing: 0px;
           box-sizing: 0px;
+  margin-bottom: 0px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .body {
-    width: 1200px;
+    width: 920px;
   }
   .Frase {
-    width: 800px;
+    width: 1500px;
+    height: 200px;
   }
   nav {
-    width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    width: 280vh;
   }
   footer {
-    width: 800px;
+    width: 1500px;
   }
   .nav {
     width: 1000px;
   }
   .informacion {
-    width: 800px;
-    height: 9900px;
+    width: 1500px;
+    height: 2000px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -32,33 +39,243 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .especial {
+    margin-top: 50px;
+    width: 1500px;
+    height: 700px;
+  }
+  .especialidad {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    visibility: hidden;
+  }
+  .Destacables {
+    margin-top: 100px;
+    width: 1500px;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .img {
+    height: 70px;
+  }
   .Servicios {
-    width: 800px;
+    width: 1500px;
+  }
+  .row {
+    height: 600px;
   }
   .pricing-header {
-    width: 800px;
-    margin: 0px;
+    width: 1500px;
+    height: 600px;
+  }
+  .display-4 {
+    margin-top: 200px;
+  }
+  .mediospago {
+    width: 1500px;
+    height: 600px;
+  }
+  .titulo {
+    width: 1500px;
+  }
+  .tarjeta {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .mepa {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .efectivo {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .titulo {
+    height: 100px;
   }
   .Tabla {
-    width: 800px;
+    width: 1500px;
+    background-color: red;
+    height: 600px;
   }
   .fs-5 {
     margin-left: 20px;
     margin-right: 20px;
   }
   .Contacto {
-    width: 800px;
+    width: 1500px;
+    height: 1100px;
+  }
+  .consulta {
+    width: 1500px;
+    padding-bottom: 100px;
+  }
+  .correo {
+    width: 1500px;
+    height: 600px;
   }
   .galeria {
-    width: 800px;
+    width: 1500px;
+    height: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    width: 209vh;
+  }
+  .Frase {
+    width: 209vh;
+    height: 200px;
+  }
+  .informacion {
+    width: 209vh;
+    height: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .especial {
+    margin-top: 50px;
+    width: 209vh;
+    height: 700px;
+  }
+  .especialidad {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    visibility: hidden;
+  }
+  .Destacables {
+    margin-top: 100px;
+    width: 205vh;
+    height: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer {
+    width: 205vh;
+  }
+  .img {
+    height: 70px;
+  }
+  .Servicios {
+    width: 209vh;
+  }
+  .row {
+    height: 600px;
+  }
+  .pricing-header {
+    width: 209vh;
+    height: 600px;
+  }
+  .display-4 {
+    margin-top: 200px;
+  }
+  .mediospago {
+    width: 209vh;
+    height: 600px;
+  }
+  .titulo {
+    width: 209vh;
+  }
+  .tarjeta {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .mepa {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .efectivo {
+    margin-top: 100px;
+    font-size: 30px;
+  }
+  .titulo {
+    height: 100px;
+  }
+  .Tabla {
+    width: 209vh;
+    background-color: red;
+    height: 600px;
+  }
+  .fs-5 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .Contacto {
+    width: 209vh;
+    height: 1100px;
+  }
+  .consulta {
+    width: 209vh;
+    padding-bottom: 100px;
+  }
+  .correo {
+    width: 209vh;
+    height: 600px;
+  }
+  .galeria {
+    width: 209vh;
   }
 }
 
 .body {
   display: -ms-grid;
   display: grid;
-  width: 100%;
   height: 100%;
+  background-color: red;
+}
+
+.footer {
+  position: absolute;
+  margin-left: 10px;
+  width: 1320px;
+  height: 40px;
 }
 
 .informacion {
@@ -117,9 +334,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
-  background-color: black;
-  color: whitesmoke;
+  padding: 20px;
+  background-color: gray;
+  color: black;
 }
 
 .pricing-header {
@@ -132,8 +349,14 @@
   margin-right: 300px;
 }
 
+.titulo {
+  background-color: red;
+  padding: 10px;
+}
+
 .Servicios {
   background-color: red;
+  color: white;
 }
 
 .rounded {
@@ -151,45 +374,137 @@ div .lead {
 }
 
 .Contacto {
-  background-color: red;
-  width: 1500px;
-  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  background-image: url(./img/fondillo.jpg);
+  color: white;
 }
 
-.Contacto .h1 {
+.Contacto .h1, .Contacto .h5, .Contacto .consulta, .Contacto .correo {
   padding-left: 30px;
   padding-top: 30px;
 }
 
-.Contacto .h5 {
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-.Contacto .mb-3 {
+.Contacto .consulta {
   width: 400px;
   height: 100px;
-  padding-left: 30px;
-  padding-top: 20px;
+}
+
+.Contacto .correo {
+  width: 400px;
+  height: 100px;
+}
+
+.Contacto .mapa {
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.Contacto .Sugerencia {
+  margin-left: 30px;
+  margin-top: 200px;
 }
 
 .galeria {
   background-color: red;
-  height: 1000px;
 }
 
-.galeria .galeria__img1 {
+.galeria .galeria__img1, .galeria .galeria__img2, .galeria .galeria__img3, .galeria .galeria__img4, .galeria .galeria__img5, .galeria .galeria__img6, .galeria .galeria__img7, .galeria .galeria__img8 {
   width: 326px;
   padding: 40px;
 }
 
-.galeria .galeria__img2 {
-  width: 350px;
-  padding: 40px;
+.especial {
+  background-image: url(./img/57834.jpg);
+  color: white;
 }
 
-.galeria .galeria__img3 {
-  width: 350px;
+.especialidad {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Nosotros {
+  padding: 30px;
+}
+
+.listaespecial li {
   padding: 40px;
+  margin-left: 10px;
+  width: 800px;
+}
+
+.nosotros {
+  margin: 20px;
+  padding-top: 20px;
+}
+
+.Destacables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.img {
+  padding: 20px 10px 20px 20px;
+}
+
+.texto {
+  padding-top: 25px;
+}
+
+.mepaimg {
+  height: 70px;
+}
+
+.cashimg {
+  height: 70px;
+}
+
+.mediospago {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tarjeta {
+  padding: 10px;
+  width: 200px;
+}
+
+.mepa {
+  padding: 10px;
+  width: 200px;
+}
+
+.efectivo {
+  padding: 10px;
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
